@@ -1,0 +1,24 @@
+.Home {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+
+  &__intro {
+
+    h1 {
+      font-family: 'Comfortaa', cursive;
+    }
+    
+    h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 300;
+    }
+
+    width: 100%;
+    max-width: 50rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

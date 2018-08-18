@@ -1,0 +1,34 @@
+{
+  "env": {
+    "development": {
+      "presets": ["react", "env"],
+      "plugins": [
+        "transform-class-properties", 
+        "transform-object-rest-spread",
+        "react-hot-loader/babel"
+      ]
+    },
+    "test": {
+      "presets": ["react", "env"],
+      "plugins": [
+        "transform-class-properties", 
+        "transform-object-rest-spread",
+        "react-hot-loader/babel",
+        ["css-modules-transform", {
+          "extensions": [".css", ".scss"]
+        }]
+      ]
+    },
+    "server": {
+      "presets": ["react", "env"],
+      "plugins": [
+        "transform-class-properties", 
+        "transform-object-rest-spread",
+        "react-hot-loader/babel",
+        ["css-modules-transform", {
+          "extensions": [".css", ".scss"]
+        }]
+      ]
+    }
+  }
+}

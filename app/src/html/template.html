@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello, World</title>
+
+      <% for (file in htmlWebpackPlugin.files.css) { %> 
+        <link rel="stylesheet" href="<%= htmlWebpackPlugin.files.css[file] %>" />
+      <% } %>
+    </head>
+  <body>
+    <div id="react"></div>
+    <% for (file in htmlWebpackPlugin.files.js) { %> 
+      <script src="<%= htmlWebpackPlugin.files.js[file] %>"></script>
+    <% } %>
+  </body>
+</html>

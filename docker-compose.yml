@@ -1,0 +1,16 @@
+version: '3.6'
+
+services:
+  app:
+    image: boilerplate-app:${TAG:-edge}
+    build:
+      context: ./app
+      dockerfile: Dockerfile
+    environment:
+      NODE_ENV: development
+    volumes:
+      - /opt/app/node_modules/
+      - ./app:/opt/app
+    ports:
+      - 5280:5280
+    command: yarn start
